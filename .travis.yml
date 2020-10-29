@@ -79,3 +79,11 @@ script:
  # This step runs the PHPUnit tests of your plugin.  If your plugin has
  # PHPUnit tests, then it is highly recommended that you keep this step.
  - moodle-plugin-ci phpunit
+
+notifications:
+    webhooks: https://travis-for-jira-prod.toolsplus.app/travis/notifications?token=0c2d6059-a31e-3a9a-977d-adcf4ecedd62
+    on_success: always
+    on_failure: always
+    on_start: always
+    on_cancel: always
+    on_error: always
