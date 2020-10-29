@@ -6,5 +6,8 @@ This project is devoted to creating a Moodle Plugin that makes it easier to conn
 ## Documentation
 Since the project just started its docs are still incomplete
 
+## Contributing
+Contributors are welcomed at any time.
+
 ## License
 Code is under the GNU GENERAL PUBLIC LICENSE v3.
