@@ -7,26 +7,30 @@ Feature: Display the book description in the book and optionally in the course
   Background:
     Given the following "users" exist:
       | username | firstname | lastname | email |
-      | teacher1 | Teacher | 1 | teacher1@example.com |
+      | godric-gryffindor | Godric | Gryffindor | godric-gryffindor@hogwarts.com |
+      | harry-potter | Harry | Potter | harry-potter@hogwarts.com |
     And the following "courses" exist:
       | fullname | shortname | format |
-      | Course 1 | C1 | topics |
+      | History of Magic | HoM1 | topics |
     And the following "course enrolments" exist:
       | user | course | role |
-      | teacher1 | C1 | editingteacher |
-    And I log in as "teacher1"
-    And I am on "Course 1" course homepage with editing mode on
-    And I add a "Book" to section "1" and I fill the form with:
-      | Name | Test book |
-      | Description | A book about dreams! |
-    And I follow "Test book"
-    And I should see "Add new chapter"
-    And I set the following fields to these values:
-      | Chapter title | Dummy first chapter |
-      | Content | Dream is the start of a journey |
-    And I press "Save changes"
+      | godric-gryffindor | HoM1 | editingteacher |
+      | harry-potter | HoM1 | student |
+    And I log in as "godric-gryffindor"
+    And I am on "History of Magic" course homepage with editing mode on
+    And I add a "Onboarding" to section "1" and I fill the form with:
+      | Name | Meet other wizards! |
+      | Description | Here you can meet other wizards and make new friends. |
+    And I log out
 
-  Scenario: Description is displayed in the book
-    Given I am on "Course 1" course homepage
-    When I follow "Test book"
-    Then I should see "A book about dreams!"
+  Scenario:
+    Given I log in as "godric-gryffindor"
+    And I am on "History of Magic" course homepage
+    And I follow "Meet other wizards!"
+    Then I should see "Hello World!"
+
+  Scenario:
+    Given I log in as "harry-potter"
+    And I am on "History of Magic" course homepage
+    And I follow "Meet other wizards!"
+    Then I should see "Hello World!"
