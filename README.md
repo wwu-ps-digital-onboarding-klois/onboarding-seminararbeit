@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/wwu-ps-digital-onboarding/onboarding.svg?branch=master)](https://travis-ci.com/wwu-ps-digital-onboarding/onboarding)
+
 # Onboarding Plugin for Moodle
 
 ## Overview
