@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('MOODLE_INTERNAL')) {
-    die('Direct access to this script is forbidden.');    ///  It must be included from a Moodle page
+    die('Direct access to this script is forbidden.');
 }
 
 require_once($CFG->dirroot.'/course/moodleform_mod.php');
@@ -14,16 +14,19 @@ class mod_onboarding_mod_form extends moodleform_mod {
 
         $mform =& $this->_form;
 
-        /*$mform->addElement('text', 'name', get_string('certificatename', 'certificate'), array('size'=>'64'));
+        $mform->addElement('text', 'name', get_string('onboardingname', 'onboarding'), array('size'=>'64'));
         $mform->setType('name', PARAM_TEXT);
         $mform->addRule('name', null, 'required', null, 'client');
 
-        $ynoptions = array(0 => get_string('no'),
+
+        /*$ynoptions = array(0 => get_string('no'),
                            1 => get_string('yes'));
         $mform->addElement('select', 'usecode', get_string('usecode', 'certificate'), $ynoptions);
         $mform->setDefault('usecode', 0);
-        $mform->addHelpButton('usecode', 'usecode', 'certificate');
-*/
+        $mform->addHelpButton('usecode', 'usecode', 'certificate');*/
+
+        $this->standard_intro_elements();
+
         $this->standard_coursemodule_elements();
 
         $this->add_action_buttons();

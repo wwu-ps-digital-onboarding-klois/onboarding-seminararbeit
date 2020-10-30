@@ -16,16 +16,11 @@
 
 /**
  * @package    mod
- * @subpackage hvp
- * @copyright  2016 Joubel AS <contact@joubel.com>
+ * @subpackage onboarding
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020080400;
-$plugin->requires  = 2013051403;
-$plugin->cron      = 0;
 $plugin->component = 'mod_onboarding';
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.2';
+$plugin->version = 2020103000;
