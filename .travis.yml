@@ -3,8 +3,8 @@ language: php
 
 services:
  - mysql
- - postgresql
- - docker
+ # - postgresql
+ # - docker
 
 # Cache NPM's and Composer's caches to speed up build times.
 cache:
@@ -25,6 +25,8 @@ env:
  # This matrix is used for testing against multiple databases.
  matrix:
   - DB=mysqli
+  # - DB=postgresql
+  # - DB=docker
 
 # This lists steps that are run before the installation step.
 before_install:
