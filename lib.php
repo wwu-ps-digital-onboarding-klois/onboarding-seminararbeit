@@ -48,14 +48,14 @@ function onboarding_update_instance($data, $mform) {
 function onboarding_delete_instance($id) {
     global $DB;
 
-    if (!$onboarding = $DB->get_record('onboarding', array('id'=>$id))) {
+    if (!$onboarding = $DB->get_record('onboarding', array('id' => $id))) {
         return false;
     }
 
     $cm = get_coursemodule_from_instance('onboarding', $id);
     \core_completion\api::update_completion_date_event($cm->id, 'onboarding', $id, null);
 
-    $DB->delete_records('onboarding', array('id'=>$onboarding->id));
+    $DB->delete_records('onboarding', array('id' => $onboarding->id));
 
     return true;
 }
