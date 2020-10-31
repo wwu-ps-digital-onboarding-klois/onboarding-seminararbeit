@@ -44,9 +44,11 @@ install:
  - moodle-plugin-ci install
 
 script:
- # This step runs the Moodle Code Checker to make sure that your plugin
+ # This step makes sure that your plugin
  # conforms to the Moodle coding standards.
  - moodle-plugin-ci validate
+ # This step check whether the code conforms to Moodle Code Standards
+ - moodle-plugin-ci codechecker
  # This step runs the PHPUnit tests of the plugin.
  - moodle-plugin-ci phpunit
  # This step runs the Behat tests of the plugin.
