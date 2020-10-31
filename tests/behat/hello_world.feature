@@ -1,8 +1,5 @@
 @mod @mod_onboarding
-Feature: Display the book description in the book and optionally in the course
-  In order to display the the book description in the course
-  As a teacher
-  I need to enable the 'Display description on course page' setting.
+Feature: Display "Hello World" message
 
   Background:
     Given the following "users" exist:
