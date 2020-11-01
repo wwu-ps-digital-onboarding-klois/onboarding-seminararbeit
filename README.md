@@ -1,9 +1,13 @@
-[![Build Status](https://travis-ci.com/wwu-ps-digital-onboarding/onboarding.svg?branch=master)](https://travis-ci.com/wwu-ps-digital-onboarding/onboarding)
+# Beispiel Code für Seminararbeit "Softwarequalität und Continuous Integration"
 
-# Onboarding Plugin for Moodle
+## Überblick
+Dieses Repository enthält den Beispiel Code des dritten Teils der folgenden Seminararbeit:
 
-## Overview
-This project is devoted to creating a Moodle Plugin that makes it easier to connect students when they are joining a new learning environment.
+Titel: Softwarequalität und Continuous Integration
+Autor: Konstantin Lois
+Seminar: Digital Onboarding
+Universität: Westfälische Wilhelms-Universität Münster
+Studiengang: Wirtschaftsinformatik
 
-## License
+## Lizenz
 Code is under the GNU GENERAL PUBLIC LICENSE v3.
