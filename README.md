@@ -10,4 +10,4 @@ Universität: Westfälische Wilhelms-Universität Münster
 Studiengang: Wirtschaftsinformatik
 
 ## Lizenz
-Code is under the GNU GENERAL PUBLIC LICENSE v3.
+GNU GENERAL PUBLIC LICENSE v3.
