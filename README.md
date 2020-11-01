@@ -1,4 +1,4 @@
-# Code für Seminararbeit "Softwarequalität und Continuous Integration"
+# Code für Seminararbeit
 
 ## Überblick
 Dieses Repository enthält den Beispiel Code des dritten Teils der folgenden Seminararbeit:
